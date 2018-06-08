@@ -22,18 +22,40 @@
     -->
     <style type="text/css">
       td {
-        padding:0.5em;
+        margin:0;
         text-align: center;
         border-collapse: collapse;
+        position: relative;
       }
 
-      td.light-fret {
+      td:after {
+        content:"";
+        position: absolute;
+        z-index: 1;
+        top:0;
+        bottom:0;
+        left:50%;
+        border-left: 2px solid #aaa;
+        transform: translate(-50%);
+      }
+      
+      td:hover:after {
+        border-left:4px solid #aaa;
+      }
+
+      span.fret {
+        display:inline-block;
+        padding:0.35em 0.75em;
+        margin:0.25em;
+      }
+
+      span.light-fret {
         background-color:#fdfdfd;
         border-radius: 100%;
-        padding:0.25em;
+        /*padding:0.25em;*/
       }
 
-      td.dark-fret {
+      span.dark-fret {
         background-color:#555;
         color:#fdfdfd;
         /* border-bottom: 100px solid #555;
@@ -50,7 +72,7 @@
         width:auto;
         margin-left:auto;
         margin-right:auto;
-        background-color:#fc9;
+        background-color:#eb8;
       }
     </style>
     <title>React App</title>
