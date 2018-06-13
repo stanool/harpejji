@@ -1,7 +1,7 @@
 # Harpejji
 Virtual harpejji using karplus-strong string algorithm
 
-Implementation of a 16 string harpejji (see http://www.marcodi.com) using a modified version of https://github.com/mrahtz/javascript-karplus-strong for sound generation. The modifications are mainly around making the various classes/funtions exportable (though I did make some changes as far as string handling and dealing with some of the magic numbers used). All credit for the sound generation part goes to André Michelle (for the original implementation) and Matthew Rahtz (for the JavaScript port).
+Implementation of a 16 string harpejji (see http://www.marcodi.com) using a modified version of https://github.com/mrahtz/javascript-karplus-strong for sound generation. The modifications are mainly around making the various classes/functions exportable (though I did make some changes as far as string handling and dealing with some of the magic numbers used). All credit for the sound generation part goes to André Michelle (for the original implementation) and Matthew Rahtz (for the JavaScript port).
 
 ## TODO
 * Make the interface look more like an actual harpejji (eg, http://www.marcodi.com/harpejji.html) and less like the output of `create-react-app`
